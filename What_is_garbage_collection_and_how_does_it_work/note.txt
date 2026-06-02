@@ -1,0 +1,7 @@
+JVM Heap is divided into Young Generation and Old Generation.
+ New objects are created in Eden Space. 
+ When Eden becomes full, Minor GC runs and live objects move to Survivor spaces.
+ Objects that survive multiple garbage collection cycles increase their age and are eventually promoted to Old Generation. 
+When Old Generation becomes full, Major GC runs. JVM also has Metaspace
+, which stores class metadata such as class structure, methods, and runtime constant pool.
+ Garbage collection helps reclaim memory occupied by unreachable objects.
